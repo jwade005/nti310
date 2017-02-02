@@ -1,1 +1,29 @@
-
+# here is my ldap configurations
+#external IP address :[108.59.85.126]
+[ashand01@ldap-nti310 ~]$ history 
+    1  sudo passwd
+    2  yum -y install openldap-servers openldap-clients
+    3  su
+    4  netstat -antup | grep -i 389
+    5  yum -y install network-tools
+    6  su 
+    7  ~# slapcat -b cn=config
+    8   slapcat -b cn=config
+    9  ls
+   10  sudo su
+   11  ls
+   12  sudo su
+   13  vi /etc/openldap/slapd.d/
+   14  cd /etc/openldap/slapd.d/
+   15  sudo su
+   16  cd /etc/openldap/slapd.d/
+   17  sudo su
+   18  pwd
+   19  history
+   20  sudo su
+   21  history /all
+   22  man histroy
+   23  history
+   24  history n
+   25  history 
+[ashand01@ldap-nti310 ~]$ 
