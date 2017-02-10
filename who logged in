@@ -1,0 +1,6 @@
+cat/var/log/messages
+cat /var/log/auth.log # to show u who logged into ur system
+cat /var/log/auth.log | grep "session opened for user"
+ cat /var/log/auth.log | grep "session opened for user" | grep -v "CRON" | awk -F ":" '{print $6}';
+ cat hosts.allow # deny access 
+ cat hosts.deny #deny
