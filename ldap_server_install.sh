@@ -104,7 +104,7 @@ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/inetorgperson.ldif
 #create base.ldif file for domain
 
 echo "Copying the base.ldif file for the domain and adding it to ldap configuration..."
-cp /tmp/NTI-310/config_scripts/base.ldif /etc/openldap/slapd.d/base.ldif
+cp /tmp/NTI-310/config_files/base.ldif /etc/openldap/slapd.d/base.ldif
 ldapadd -x -D "cn=ldapadm,dc=ali,dc=local" -f /etc/openldap/slapd.d/base.ldif -y /root/ldap_admin_pass
 #ldapadd -W -x -D "cn=ldapadm,dc=ali,dc=local" -f /etc/openldap/slapd.d/base.ldif
 
