@@ -12,7 +12,7 @@ unset DEBIAN_FRONTEND
 git clone https://github.com/ashand01/nti310.git /tmp/NTI310
 
 
-cp /tmp/NTI310/ldap.conf /etc/ldap.conf
+cp /tmp/NTI310/config_files/ldap.conf /etc/ldap.conf
 
 
 sed -i 's,passwd:         compat,passwd:         ldap compat,g' /etc/nsswitch.conf
