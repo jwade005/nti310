@@ -288,7 +288,7 @@ $servers->newServer('ldap_pla');
 
 /* A convenient name that will appear in the tree viewer and throughout
    phpLDAPadmin to identify this LDAP server to users. */
-$servers->setValue('server','name','Local LDAP Server');
+$servers->setValue('server','name','Ali Shandi LDAP Server');
 
 /* Examples:
    'ldap.example.com',
