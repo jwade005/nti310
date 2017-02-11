@@ -302,7 +302,7 @@ $servers->setValue('server','name','Ali Shandi LDAP Server');
 
 /* Array of base DNs of your LDAP server. Leave this blank to have phpLDAPadmin
    auto-detect it for you. */
-// $servers->setValue('server','base',array(''));
+$servers->setValue('server','base',array('dc=ali,dc=local'));
 
 /* Five options for auth_type:
    1. 'cookie': you will login via a web form, and a client-side cookie will
@@ -329,7 +329,7 @@ $servers->setValue('server','name','Ali Shandi LDAP Server');
    the directory for users (ie, if your LDAP server does not allow anonymous
    binds. */
 // $servers->setValue('login','bind_id','');
-#  $servers->setValue('login','bind_id','cn=Manager,dc=example,dc=com');
+$servers->setValue('login','bind_id','cn=ldapadm,dc=ali,dc=local');
 
 /* Your LDAP password. If you specified an empty bind_id above, this MUST also
    be blank. */
@@ -457,7 +457,7 @@ $servers->setValue('login','attr','dn');
 // $servers->setValue('auto_number','pass',null);
 
 /* Enable anonymous bind login. */
-// $servers->setValue('login','anon_bind',true);
+$servers->setValue('login','anon_bind',false);
 
 /* Use customized page with prefix when available. */
 #  $servers->setValue('custom','pages_prefix','custom_');
