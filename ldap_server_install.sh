@@ -8,7 +8,7 @@ echo "Installing git..."
 yum -y install git
 
 echo "Cloning Ali's nti310 GitHub..."
-git clone https://github.com/https://github.com/ashand01/nti310.git /tmp/NTI-310
+git clone https://github.com/ashand01/nti310.git /tmp/NTI-310
 git config --global user.name "ashand01"
 git config --global user.email "ashand01@seattlecentral.edu"
 
