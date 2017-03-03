@@ -34,7 +34,7 @@ sudo systemctl enable postgresql
 
 #use postgres account to setup database
 
-sudo cp /tmp/NTI-310/config_scripts/postgres.sql /var/lib/pgsql/postgres.sql
+sudo cp /tmp/NTI-310/config_files/postgres.sql /var/lib/pgsql/postgres.sql
 sudo -i -u postgres psql -U postgres -f /var/lib/pgsql/postgres.sql
 
 #activate a postgres shell command prompt
@@ -88,7 +88,7 @@ sudo sed -i 's,  Require local,  Require all granted,g' /etc/httpd/conf.d/phpPgA
 
 # edit /etc/phpPgAdmin/config.inc.php
 
-cp /tmp/NTI-310/config_scripts/config.inc.php /etc/phpPgAdmin/config.inc.php
+sudo cp /tmp/NTI-310/config_files/config.inc.php /etc/phpPgAdmin/config.inc.php
 
 #sudo sed -i "s,$conf['servers'][0]['host'] = 'localhost';,$conf['servers'][0]['host'] = 'localhost';,g"
 #sudo sed -i "s,$conf['servers'][0]['desc'] = 'PostgreSQL';,$conf['servers'][0]['desc'] = 'jwade005 PostgreSQL';"
