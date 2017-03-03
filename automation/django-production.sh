@@ -12,6 +12,7 @@ echo "Starting Apache Server..."
 sudo systemctl start httpd.service
 
 echo "Cloning Ali's NTI-310 GitHub..."
+sudo yum -y install git
 sudo git clone https://github.com/ashand01/nti310.git /tmp/NTI-310
 sudo git config --global user.name "ashand01"
 sudo git config --global user.email "ashand01@seattlecentral.edu"
