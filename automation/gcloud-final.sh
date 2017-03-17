@@ -42,7 +42,7 @@ gcloud compute instances create rsyslog-server \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --zone us-west1-b \
-    --metadata-from-file startup-script=/home/ashand01/nti310/automation/rsyslog-server.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/rsyslog-server \
 
 echo "Creating ubuntu-client instance and running the install scripts..."
 gcloud compute instances create ubuntu-client \
@@ -66,7 +66,7 @@ gcloud compute instances create nfs-server \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --zone us-west1-b \
-    --metadata-from-file startup-script=/home/ashand01/nti310/automation/nfs-server.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/nfs-server \
 
 echo "Creating the postgres-a-test server and running the install script..."
 gcloud compute instances create postgres-a-test \
