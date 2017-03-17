@@ -42,7 +42,7 @@ gcloud compute instances create rsyslog-server \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --scopes cloud-platform \
-    --metadata-from-file startup-script=/Users/ashandi/desktop/nti310/nti310-gh/automation/rsyslog-server.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/rsyslog-server.sh \
 
 echo "Creating ubuntu-client instance and running the install scripts..."
 gcloud compute instances create ubuntu-client \
@@ -50,7 +50,7 @@ gcloud compute instances create ubuntu-client \
     --image-project ubuntu-os-cloud \
     --machine-type f1-micro \
     --scopes cloud-platform \
-    --metadata-from-file startup-script=/Users/ashandi/desktop/nti310/nti310-gh/automation/ubuntu-client.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/ubuntu-client.sh \
 
 echo "Creating the ldap-server instance and running the install script..."
 gcloud compute instances create ldap-server \
@@ -58,7 +58,7 @@ gcloud compute instances create ldap-server \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --scopes cloud-platform \
-    --metadata-from-file startup-script=/Users/ashandi/desktop/nti310/nti310-gh/automation/ldap_server_install.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/ldap_server_install.sh \
 
 echo "Creating the nfs-server and running the install script..."
 gcloud compute instances create nfs-server \
@@ -66,7 +66,7 @@ gcloud compute instances create nfs-server \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --scopes cloud-platform \
-    --metadata-from-file startup-script=/Users/ashandi/desktop/nti310/nti310-gh/automation/nfs-server.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/nfs-server.sh \
 
 echo "Creating the postgres-a-test server and running the install script..."
 gcloud compute instances create postgres-a-test \
@@ -74,7 +74,7 @@ gcloud compute instances create postgres-a-test \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --scopes cloud-platform \
-    --metadata-from-file startup-script=/Users/ashandi/desktop/nti310/nti310-gh/automation/postgres-server-install.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/postgres-server-install.sh \
 
 echo "Creating the postgres-b-staging server and running the install script..."
 gcloud compute instances create postgres-b-staging \
@@ -82,7 +82,7 @@ gcloud compute instances create postgres-b-staging \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --scopes cloud-platform \
-    --metadata-from-file startup-script=/Users/ashandi/desktop/nti310/nti310-gh/automation/postgres-server-install.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/postgres-server-install.sh \
 
 echo "Creating the postgres-c-production server and running the install script..."
 gcloud compute instances create postgres-c-production \
@@ -90,7 +90,7 @@ gcloud compute instances create postgres-c-production \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --scopes cloud-platform \
-    --metadata-from-file startup-script=/Users/ashandi/desktop/nti310/nti310-gh/automation/postgres-server-install.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/postgres-server-install.sh \
 
 echo "Creating the django-a-test server and running the install script..."
 gcloud compute instances create django-a-test \
@@ -98,7 +98,7 @@ gcloud compute instances create django-a-test \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --scopes cloud-platform \
-    --metadata-from-file startup-script=/Users/ashandi/desktop/nti310/nti310-gh/automation/apache_django_install.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/apache_django_install.sh \
 
 echo "Creating the django-b-staging server and running the install script..."
 gcloud compute instances create django-b-staging \
@@ -106,7 +106,7 @@ gcloud compute instances create django-b-staging \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --scopes cloud-platform \
-    --metadata-from-file startup-script=/Users/ashandi/desktop/nti310/nti310-gh/automation/django-staging.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/django-staging.sh \
 
 echo "Creating the django-c-production server and running the install script..."
 gcloud compute instances create django-c-production \
@@ -114,6 +114,6 @@ gcloud compute instances create django-c-production \
     --image-project centos-cloud \
     --machine-type f1-micro \
     --scopes cloud-platform \
-    --metadata-from-file startup-script=/Users/ashandi/desktop/nti310/nti310-gh/automation/django-production.sh \
+    --metadata-from-file startup-script=/home/ashand01/nti310/automation/django-production.sh \
 
 echo "Google Cloud Project nti310-auto-8 Installation Complete. :)"
