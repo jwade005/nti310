@@ -4,17 +4,17 @@ echo "Authorizing ashand01 for this project..."
 gcloud auth login ashand01@seattlecentral.edu --no-launch-browser
 
 echo "Enabling billing..."
-gcloud alpha billing accounts projects link final-3 --account-id=001EC4-489E2C-579C31
+gcloud alpha billing accounts projects link final-4-161918 --account-id=001EC4-489E2C-579C31
 
 echo "Setting admin account-id..."
 gcloud config set account ashand01@seattlecentral.edu
 
 echo "Setting the project for Configuration..."
-gcloud config set project final-3
+gcloud config set project final-4-161918
 
 echo "Setting zone/region for Configuration..."
 gcloud config set compute/zone us-west1-c
-
+final-4-161918
 gcloud config set compute/region us-west1
 
 echo "Creating firewall-rules..."
